@@ -1,6 +1,6 @@
 <?php
 
-namespace Akaunting\Firewall\Models;
+namespace Edoardoagnelli1357\FirewallModels;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -19,12 +19,12 @@ class Ip extends Model
 
     public function log()
     {
-        return $this->belongsTo('Akaunting\Firewall\Models\Log');
+        return $this->belongsTo('Edoardoagnelli1357\FirewallModels\Log');
     }
 
     public function logs()
     {
-        return $this->hasMany('Akaunting\Firewall\Models\Log', 'ip', 'ip');
+        return $this->hasMany('Edoardoagnelli1357\FirewallModels\Log', 'ip', 'ip');
     }
 
     public function scopeBlocked($query, $ip = null)

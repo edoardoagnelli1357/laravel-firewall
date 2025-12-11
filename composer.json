@@ -25,7 +25,8 @@
         "php": "^8.0",
         "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
         "guzzlehttp/guzzle": "^7.8",
-        "jenssegers/agent": "^3.0"
+        "mobiledetect/mobiledetectlib": "^4.8",
+        "jaybizzle/crawler-detect": "^1.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5|^10.0|^11.0",
@@ -33,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Akaunting\\Firewall\\": "src"
+            "Edoardoagnelli1357\\Firewall\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Akaunting\\Firewall\\Tests\\": "tests"
+            "Edoardoagnelli1357\\Firewall\\Tests\\": "tests"
         }
     },
     "extra": {

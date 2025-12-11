@@ -1,8 +1,8 @@
 <?php
 
-namespace Akaunting\Firewall\Commands;
+namespace Edoardoagnelli1357\FirewallCommands;
 
-use Akaunting\Firewall\Models\Ip;
+use Edoardoagnelli1357\FirewallModels\Ip;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 

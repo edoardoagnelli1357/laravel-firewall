@@ -1,10 +1,10 @@
 <?php
 
-namespace Akaunting\Firewall\Listeners;
+namespace Edoardoagnelli1357\FirewallListeners;
 
-use Akaunting\Firewall\Events\AttackDetected;
-use Akaunting\Firewall\Models\Ip;
-use Akaunting\Firewall\Models\Log;
+use Edoardoagnelli1357\FirewallEvents\AttackDetected;
+use Edoardoagnelli1357\FirewallModels\Ip;
+use Edoardoagnelli1357\FirewallModels\Log;
 use Carbon\Carbon;
 
 class BlockIp

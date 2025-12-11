@@ -1,9 +1,9 @@
 <?php
 
-namespace Akaunting\Firewall\Middleware;
+namespace Edoardoagnelli1357\FirewallMiddleware;
 
-use Akaunting\Firewall\Abstracts\Middleware;
-use Akaunting\Firewall\Models\Ip as Model;
+use Edoardoagnelli1357\FirewallAbstracts\Middleware;
+use Edoardoagnelli1357\FirewallModels\Ip as Model;
 use Illuminate\Database\QueryException;
 
 class Ip extends Middleware

@@ -2,11 +2,11 @@
 
 namespace Akaunting\Firewall;
 
-use Akaunting\Firewall\Commands\UnblockIp;
-use Akaunting\Firewall\Events\AttackDetected;
-use Akaunting\Firewall\Listeners\BlockIp;
-use Akaunting\Firewall\Listeners\CheckLogin;
-use Akaunting\Firewall\Listeners\NotifyUsers;
+use Edoardoagnelli1357\FirewallCommands\UnblockIp;
+use Edoardoagnelli1357\FirewallEvents\AttackDetected;
+use Edoardoagnelli1357\FirewallListeners\BlockIp;
+use Edoardoagnelli1357\FirewallListeners\CheckLogin;
+use Edoardoagnelli1357\FirewallListeners\NotifyUsers;
 use Illuminate\Auth\Events\Failed as LoginFailed;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Routing\Router;
@@ -64,20 +64,20 @@ class Provider extends ServiceProvider
     public function registerMiddleware($router)
     {
         $router->middlewareGroup('firewall.all', config('firewall.all_middleware'));
-        $router->aliasMiddleware('firewall.agent', 'Akaunting\Firewall\Middleware\Agent');
-        $router->aliasMiddleware('firewall.bot', 'Akaunting\Firewall\Middleware\Bot');
-        $router->aliasMiddleware('firewall.ip', 'Akaunting\Firewall\Middleware\Ip');
-        $router->aliasMiddleware('firewall.geo', 'Akaunting\Firewall\Middleware\Geo');
-        $router->aliasMiddleware('firewall.lfi', 'Akaunting\Firewall\Middleware\Lfi');
-        $router->aliasMiddleware('firewall.php', 'Akaunting\Firewall\Middleware\Php');
-        $router->aliasMiddleware('firewall.referrer', 'Akaunting\Firewall\Middleware\Referrer');
-        $router->aliasMiddleware('firewall.rfi', 'Akaunting\Firewall\Middleware\Rfi');
-        $router->aliasMiddleware('firewall.session', 'Akaunting\Firewall\Middleware\Session');
-        $router->aliasMiddleware('firewall.sqli', 'Akaunting\Firewall\Middleware\Sqli');
-        $router->aliasMiddleware('firewall.swear', 'Akaunting\Firewall\Middleware\Swear');
-        $router->aliasMiddleware('firewall.url', 'Akaunting\Firewall\Middleware\Url');
-        $router->aliasMiddleware('firewall.whitelist', 'Akaunting\Firewall\Middleware\Whitelist');
-        $router->aliasMiddleware('firewall.xss', 'Akaunting\Firewall\Middleware\Xss');
+        $router->aliasMiddleware('firewall.agent', 'Edoardoagnelli1357\FirewallMiddleware\Agent');
+        $router->aliasMiddleware('firewall.bot', 'Edoardoagnelli1357\FirewallMiddleware\Bot');
+        $router->aliasMiddleware('firewall.ip', 'Edoardoagnelli1357\FirewallMiddleware\Ip');
+        $router->aliasMiddleware('firewall.geo', 'Edoardoagnelli1357\FirewallMiddleware\Geo');
+        $router->aliasMiddleware('firewall.lfi', 'Edoardoagnelli1357\FirewallMiddleware\Lfi');
+        $router->aliasMiddleware('firewall.php', 'Edoardoagnelli1357\FirewallMiddleware\Php');
+        $router->aliasMiddleware('firewall.referrer', 'Edoardoagnelli1357\FirewallMiddleware\Referrer');
+        $router->aliasMiddleware('firewall.rfi', 'Edoardoagnelli1357\FirewallMiddleware\Rfi');
+        $router->aliasMiddleware('firewall.session', 'Edoardoagnelli1357\FirewallMiddleware\Session');
+        $router->aliasMiddleware('firewall.sqli', 'Edoardoagnelli1357\FirewallMiddleware\Sqli');
+        $router->aliasMiddleware('firewall.swear', 'Edoardoagnelli1357\FirewallMiddleware\Swear');
+        $router->aliasMiddleware('firewall.url', 'Edoardoagnelli1357\FirewallMiddleware\Url');
+        $router->aliasMiddleware('firewall.whitelist', 'Edoardoagnelli1357\FirewallMiddleware\Whitelist');
+        $router->aliasMiddleware('firewall.xss', 'Edoardoagnelli1357\FirewallMiddleware\Xss');
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Akaunting\Firewall\Models;
+namespace Edoardoagnelli1357\FirewallModels;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

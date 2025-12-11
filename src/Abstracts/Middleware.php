@@ -1,9 +1,9 @@
 <?php
 
-namespace Akaunting\Firewall\Abstracts;
+namespace Edoardoagnelli1357\FirewallAbstracts;
 
-use Akaunting\Firewall\Events\AttackDetected;
-use Akaunting\Firewall\Traits\Helper;
+use Edoardoagnelli1357\FirewallEvents\AttackDetected;
+use Edoardoagnelli1357\FirewallTraits\Helper;
 use Closure;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Response;

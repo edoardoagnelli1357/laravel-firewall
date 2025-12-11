@@ -1,9 +1,9 @@
 <?php
 
-namespace Akaunting\Firewall\Listeners;
+namespace Edoardoagnelli1357\FirewallListeners;
 
-use Akaunting\Firewall\Events\AttackDetected;
-use Akaunting\Firewall\Traits\Helper;
+use Edoardoagnelli1357\FirewallEvents\AttackDetected;
+use Edoardoagnelli1357\FirewallTraits\Helper;
 use Illuminate\Auth\Events\Failed as Event;
 
 class CheckLogin
