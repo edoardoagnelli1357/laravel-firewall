@@ -62,20 +62,20 @@ class Provider extends ServiceProvider
     public function registerMiddleware($router)
     {
         $router->middlewareGroup('firewall.all', config('firewall.all_middleware'));
-        $router->aliasMiddleware('firewall.agent', 'Edoardoagnelli1357\FirewallMiddleware\Agent');
-        $router->aliasMiddleware('firewall.bot', 'Edoardoagnelli1357\FirewallMiddleware\Bot');
-        $router->aliasMiddleware('firewall.ip', 'Edoardoagnelli1357\FirewallMiddleware\Ip');
-        $router->aliasMiddleware('firewall.geo', 'Edoardoagnelli1357\FirewallMiddleware\Geo');
-        $router->aliasMiddleware('firewall.lfi', 'Edoardoagnelli1357\FirewallMiddleware\Lfi');
-        $router->aliasMiddleware('firewall.php', 'Edoardoagnelli1357\FirewallMiddleware\Php');
-        $router->aliasMiddleware('firewall.referrer', 'Edoardoagnelli1357\FirewallMiddleware\Referrer');
-        $router->aliasMiddleware('firewall.rfi', 'Edoardoagnelli1357\FirewallMiddleware\Rfi');
-        $router->aliasMiddleware('firewall.session', 'Edoardoagnelli1357\FirewallMiddleware\Session');
-        $router->aliasMiddleware('firewall.sqli', 'Edoardoagnelli1357\FirewallMiddleware\Sqli');
-        $router->aliasMiddleware('firewall.swear', 'Edoardoagnelli1357\FirewallMiddleware\Swear');
-        $router->aliasMiddleware('firewall.url', 'Edoardoagnelli1357\FirewallMiddleware\Url');
-        $router->aliasMiddleware('firewall.whitelist', 'Edoardoagnelli1357\FirewallMiddleware\Whitelist');
-        $router->aliasMiddleware('firewall.xss', 'Edoardoagnelli1357\FirewallMiddleware\Xss');
+        $router->aliasMiddleware('firewall.agent', 'Edoardoagnelli1357\Firewall\Middleware\Agent');
+        $router->aliasMiddleware('firewall.bot', 'Edoardoagnelli1357\Firewall\Middleware\Bot');
+        $router->aliasMiddleware('firewall.ip', 'Edoardoagnelli1357\Firewall\Middleware\Ip');
+        $router->aliasMiddleware('firewall.geo', 'Edoardoagnelli1357\Firewall\Middleware\Geo');
+        $router->aliasMiddleware('firewall.lfi', 'Edoardoagnelli1357\Firewall\Middleware\Lfi');
+        $router->aliasMiddleware('firewall.php', 'Edoardoagnelli1357\Firewall\Middleware\Php');
+        $router->aliasMiddleware('firewall.referrer', 'Edoardoagnelli1357\Firewall\Middleware\Referrer');
+        $router->aliasMiddleware('firewall.rfi', 'Edoardoagnelli1357\Firewall\Middleware\Rfi');
+        $router->aliasMiddleware('firewall.session', 'Edoardoagnelli1357\Firewall\Middleware\Session');
+        $router->aliasMiddleware('firewall.sqli', 'Edoardoagnelli1357\Firewall\Middleware\Sqli');
+        $router->aliasMiddleware('firewall.swear', 'Edoardoagnelli1357\Firewall\Middleware\Swear');
+        $router->aliasMiddleware('firewall.url', 'Edoardoagnelli1357\Firewall\Middleware\Url');
+        $router->aliasMiddleware('firewall.whitelist', 'Edoardoagnelli1357\Firewall\Middleware\Whitelist');
+        $router->aliasMiddleware('firewall.xss', 'Edoardoagnelli1357\Firewall\Middleware\Xss');
     }
 
     /**
