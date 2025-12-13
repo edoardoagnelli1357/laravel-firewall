@@ -1,11 +1,12 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTests\Feature;
+namespace Edoardoagnelli1357\Firewall\Tests\Feature;
 
-use Edoardoagnelli1357\FirewallMiddleware\Whitelist;
+use Edoardoagnelli1357\Firewall\Tests\TestCase as TestsTestCase;
+use Edoardoagnelli1357\Firewall\Middleware\Whitelist;
 use Edoardoagnelli1357\FirewallTests\TestCase;
 
-class WhitelistTest extends TestCase
+class WhitelistTest extends TestsTestCase
 {
     public function testShouldAllow()
     {

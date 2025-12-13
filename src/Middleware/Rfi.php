@@ -1,8 +1,8 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallMiddleware;
+namespace Edoardoagnelli1357\Firewall\Middleware;
 
-use Edoardoagnelli1357\FirewallAbstracts\Middleware;
+use Edoardoagnelli1357\Firewall\Abstracts\Middleware;
 
 class Rfi extends Middleware
 {

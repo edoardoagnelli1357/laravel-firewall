@@ -1,12 +1,12 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTests\Feature;
+namespace Edoardoagnelli1357\Firewall\Tests\Feature;
 
-use Edoardoagnelli1357\FirewallMiddleware\Ip;
-use Edoardoagnelli1357\FirewallModels\Ip as Model;
-use Edoardoagnelli1357\FirewallTests\TestCase;
+use Edoardoagnelli1357\Firewall\Tests\TestCase as TestsTestCase;
+use Edoardoagnelli1357\Firewall\Middleware\Ip;
+use Edoardoagnelli1357\Firewall\Models\Ip as Model;
 
-class IpTest extends TestCase
+class IpTest extends TestsTestCase
 {
     public function testShouldAllow()
     {

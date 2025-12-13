@@ -1,6 +1,6 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallExceptions;
+namespace Edoardoagnelli1357\Firewall\Exceptions;
 
 use Exception;
 

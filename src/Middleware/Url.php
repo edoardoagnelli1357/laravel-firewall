@@ -1,9 +1,9 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallMiddleware;
+namespace Edoardoagnelli1357\Firewall\Middleware;
 
-use Edoardoagnelli1357\FirewallAbstracts\Middleware;
-use Edoardoagnelli1357\FirewallEvents\AttackDetected;
+use Edoardoagnelli1357\Firewall\Abstracts\Middleware;
+use Edoardoagnelli1357\Firewall\Events\AttackDetected;
 
 class Url extends Middleware
 {

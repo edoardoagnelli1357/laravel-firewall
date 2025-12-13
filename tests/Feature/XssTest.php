@@ -1,11 +1,12 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTests\Feature;
+namespace Edoardoagnelli1357\Firewall\Tests\Feature;
 
-use Edoardoagnelli1357\FirewallMiddleware\Xss;
+use Edoardoagnelli1357\Firewall\Tests\TestCase as TestsTestCase;
+use Edoardoagnelli1357\Firewall\Middleware\Xss;
 use Edoardoagnelli1357\FirewallTests\TestCase;
 
-class XssTest extends TestCase
+class XssTest extends TestsTestCase
 {
     public function testShouldAllow()
     {

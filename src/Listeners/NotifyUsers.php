@@ -1,6 +1,6 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallListeners;
+namespace Edoardoagnelli1357\Firewall\Listeners;
 
 use Edoardoagnelli1357\FirewallEvents\AttackDetected as Event;
 use Edoardoagnelli1357\FirewallNotifications\AttackDetected;

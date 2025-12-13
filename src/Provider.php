@@ -1,12 +1,12 @@
 <?php
 
-namespace Akaunting\Firewall;
+namespace Edoardoagnelli1357\Firewall;
 
-use Edoardoagnelli1357\FirewallCommands\UnblockIp;
-use Edoardoagnelli1357\FirewallEvents\AttackDetected;
-use Edoardoagnelli1357\FirewallListeners\BlockIp;
-use Edoardoagnelli1357\FirewallListeners\CheckLogin;
-use Edoardoagnelli1357\FirewallListeners\NotifyUsers;
+use Edoardoagnelli1357\Firewall\Commands\UnblockIp;
+use Edoardoagnelli1357\Firewall\Events\AttackDetected;
+use Edoardoagnelli1357\Firewall\Listeners\BlockIp;
+use Edoardoagnelli1357\Firewall\Listeners\CheckLogin;
+use Edoardoagnelli1357\Firewall\Listeners\NotifyUsers;
 use Illuminate\Auth\Events\Failed as LoginFailed;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Routing\Router;
@@ -50,8 +50,6 @@ class Provider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/Config/firewall.php', 'firewall');
-
-        $this->app->register(\Jenssegers\Agent\AgentServiceProvider::class);
     }
 
     /**

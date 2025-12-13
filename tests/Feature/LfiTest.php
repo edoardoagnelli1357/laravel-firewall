@@ -1,11 +1,12 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTests\Feature;
+namespace Edoardoagnelli1357\Firewall\Tests\Feature;
 
-use Edoardoagnelli1357\FirewallMiddleware\Lfi;
+use Edoardoagnelli1357\Firewall\Tests\TestCase as TestsTestCase;
+use Edoardoagnelli1357\Firewall\Middleware\Lfi;
 use Edoardoagnelli1357\FirewallTests\TestCase;
 
-class LfiTest extends TestCase
+class LfiTest extends TestsTestCase
 {
     public function testShouldAllow()
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallMiddleware;
+namespace Edoardoagnelli1357\Firewall\Middleware;
 
-use Edoardoagnelli1357\FirewallAbstracts\Middleware;
-use Edoardoagnelli1357\FirewallModels\Ip as Model;
+use Edoardoagnelli1357\Firewall\Abstracts\Middleware;
+use Edoardoagnelli1357\Firewall\Models\Ip as IpModel;
 use Illuminate\Database\QueryException;
 
 class Ip extends Middleware
@@ -13,7 +13,7 @@ class Ip extends Middleware
         $status = false;
 
         try {
-            $ip = config('firewall.models.ip', Model::class);
+            $ip = config('firewall.models.ip', IpModel::class);
             $status = $ip::blocked($this->ip())->pluck('id')->first();
         } catch (QueryException $e) {
             // Base table or view not found

@@ -1,10 +1,10 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallMiddleware;
+namespace Edoardoagnelli1357\Firewall\Middleware;
 
-use Edoardoagnelli1357\FirewallAbstracts\Middleware;
+use Edoardoagnelli1357\Firewall\Abstracts\Middleware;
 use Edoardoagnelli1357\FirewallEvents\AttackDetected;
-use Jenssegers\Agent\Agent as Parser;
+use Edoardoagnelli1357\Firewall\Support\Agent as Parser;
 
 class Agent extends Middleware
 {

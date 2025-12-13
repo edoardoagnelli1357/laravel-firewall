@@ -1,11 +1,12 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTests\Feature;
+namespace Edoardoagnelli1357\Firewall\Tests\Feature;
 
-use Edoardoagnelli1357\FirewallMiddleware\Sqli;
+use Edoardoagnelli1357\Firewall\Tests\TestCase as TestsTestCase;
+use Edoardoagnelli1357\Firewall\Middleware\Sqli;
 use Edoardoagnelli1357\FirewallTests\TestCase;
 
-class SqliTest extends TestCase
+class SqliTest extends TestsTestCase
 {
     public function testShouldAllow()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTests;
+namespace Edoardoagnelli1357\Firewall\Tests;
 
-use Edoardoagnelli1357\FirewallProvider;
+use Edoardoagnelli1357\Firewall\Provider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

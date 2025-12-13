@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Edoardoagnelli1357\\Firewall\\": "src"
+            "Edoardoagnelli1357\\Firewall\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Edoardoagnelli1357\\Firewall\\Tests\\": "tests"
+            "Edoardoagnelli1357\\Firewall\\Tests\\": "tests/"
         }
     },
     "extra": {

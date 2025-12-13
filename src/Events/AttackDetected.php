@@ -1,6 +1,6 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallEvents;
+namespace Edoardoagnelli1357\Firewall\Events;
 
 class AttackDetected
 {

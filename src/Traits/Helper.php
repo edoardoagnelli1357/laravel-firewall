@@ -1,8 +1,8 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallTraits;
+namespace Edoardoagnelli1357\Firewall\Traits;
 
-use Edoardoagnelli1357\FirewallModels\Log;
+use Edoardoagnelli1357\Firewall\Models\Log;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\IpUtils;
 

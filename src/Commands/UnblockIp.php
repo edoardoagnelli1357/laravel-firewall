@@ -1,9 +1,9 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallCommands;
+namespace Edoardoagnelli1357\Firewall\Commands;
 
-use Edoardoagnelli1357\FirewallModels\Ip;
 use Carbon\Carbon;
+use Edoardoagnelli1357\Firewall\Models\Ip as FirewallModelsIp;
 use Illuminate\Console\Command;
 
 class UnblockIp extends Command
@@ -39,7 +39,7 @@ class UnblockIp extends Command
     {
         $now = Carbon::now(config('app.timezone'));
 
-        $ip = config('firewall.models.ip', Ip::class);
+        $ip = config('firewall.models.ip', FirewallModelsIp::class);
         $ip::with('log')->blocked()->each(function ($ip) use ($now) {
             if (empty($ip->log)) {
                 return;
