@@ -1,6 +1,8 @@
 {
     "name": "edoardoagnelli1357/laravel-firewall",
     "description": "Web Application Firewall (WAF) package for Laravel",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "keywords": [
         "laravel",
         "firewall",
@@ -45,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Akaunting\\Firewall\\Provider"
+                "Edoardoagnelli1357\\Firewall\\Provider"
             ]
         }
     },
