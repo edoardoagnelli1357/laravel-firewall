@@ -1,6 +1,6 @@
 <?php
 
-namespace Edoardoagnelli1357\FirewallNotifications;
+namespace Edoardoagnelli1357\Firewall\Notifications;
 
 use Illuminate\Notifications\Notifiable as NotifiableTrait;
 

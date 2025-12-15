@@ -2,8 +2,8 @@
 
 namespace Edoardoagnelli1357\Firewall\Listeners;
 
-use Edoardoagnelli1357\FirewallEvents\AttackDetected;
-use Edoardoagnelli1357\FirewallTraits\Helper;
+use Edoardoagnelli1357\Firewall\Events\AttackDetected;
+use Edoardoagnelli1357\Firewall\Traits\Helper;
 use Illuminate\Auth\Events\Failed as Event;
 
 class CheckLogin

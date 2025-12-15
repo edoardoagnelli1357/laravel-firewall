@@ -2,9 +2,9 @@
 
 namespace Edoardoagnelli1357\Firewall\Listeners;
 
-use Edoardoagnelli1357\FirewallEvents\AttackDetected as Event;
-use Edoardoagnelli1357\FirewallNotifications\AttackDetected;
-use Edoardoagnelli1357\FirewallNotifications\Notifiable;
+use Edoardoagnelli1357\Firewall\Events\AttackDetected as Event;
+use Edoardoagnelli1357\Firewall\Notifications\AttackDetected;
+use Edoardoagnelli1357\Firewall\Notifications\Notifiable;
 use Throwable;
 
 class NotifyUsers
