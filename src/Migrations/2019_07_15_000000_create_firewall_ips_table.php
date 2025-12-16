@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateFirewallIpsTable extends Migration
 {
@@ -15,11 +16,12 @@ class CreateFirewallIpsTable extends Migration
         Schema::create('firewall_ips', function (Blueprint $table) {
             $table->increments('id');
             $table->string('ip');
-            $table->integer('log_id')->nullable();
+            $table->string('user_agent')->default('unknown');
+            $table->integer('log_id')->nullable()->unique();
             $table->boolean('blocked')->default(1);
             $table->timestamps();
             $table->softDeletes();
-            
+
             $table->index('ip');
         });
     }

@@ -11,7 +11,7 @@ class Ip extends Model
 
     protected $table = 'firewall_ips';
 
-    protected $fillable = ['ip', 'log_id', 'blocked'];
+    protected $fillable = ['ip', 'user_agent', 'log_id', 'blocked'];
 
     protected $casts = [
         'deleted_at' => 'datetime',
@@ -19,12 +19,7 @@ class Ip extends Model
 
     public function log()
     {
-        return $this->belongsTo('Edoardoagnelli1357\FirewallModels\Log');
-    }
-
-    public function logs()
-    {
-        return $this->hasMany('Edoardoagnelli1357\FirewallModels\Log', 'ip', 'ip');
+        return $this->belongsTo(Log::class, 'ip', 'ip');
     }
 
     public function scopeBlocked($query, $ip = null)

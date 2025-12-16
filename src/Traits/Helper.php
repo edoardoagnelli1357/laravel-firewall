@@ -97,6 +97,7 @@ trait Helper
 
         return $model::create([
             'ip' => $this->ip(),
+            'user_agent' => $this->request->header('User-Agent', 'unknown'),
             'level' => $level,
             'middleware' => $middleware,
             'user_id' => $user_id,

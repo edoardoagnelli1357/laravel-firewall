@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateFirewallLogsTable extends Migration
 {
@@ -15,6 +16,7 @@ class CreateFirewallLogsTable extends Migration
         Schema::create('firewall_logs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('ip');
+            $table->string('user_agent')->default('unknown');
             $table->string('level')->default('medium');
             $table->string('middleware');
             $table->integer('user_id')->nullable();

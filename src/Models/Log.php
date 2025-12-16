@@ -21,4 +21,8 @@ class Log extends Model
     {
         return $this->belongsTo(config('firewall.models.user'));
     }
+
+    public function ip(){
+        return $this->hasOne(Ip::class, 'ip', 'ip');
+    }
 }
